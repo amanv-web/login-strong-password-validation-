@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+body {
+  font-family: poppins;
+  font-weight: 300;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+  background: rgb(232,57,246);
+  background: linear-gradient(315deg, rgba(232,57,246,1) 0%, rgba(97,216,222,1) 90%);
+}
+
+h1{
+  display: flex;
+  margin-top: -5px;
+ font-size: 30px;
+}
+h4{
+  display: flex;
+}
+
+
+.container {
+background-image: url(https://i.pinimg.com/474x/19/88/b9/1988b9e1a5932267b8440d95dce365ac.jpg); 
+  background-size:fill; 
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 0.5rem;
+}
+
+input {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#password-input {
+  padding-right: 32px;
+}
+
+#error {
+  color: red;
+  font-size: 0.9rem;
+}
+#eye {
+  position: absolute;
+  margin-top: 124px;
+  margin-left: 214px;
+  cursor: pointer;
+}
+/* submit button  */
+button {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* another div for confirmation */
+.list {
+  display: flex;
+  text-decoration: none;
+  color: rgba(255, 0, 0, 0.391);
+}
+.list::before {
+  content: "\f00d";
+  font-family: Fontawesome;
+  width: 30px;
+}
+.list-check {
+  width: auto;
+  color: rgb(0, 201, 0);
+}
+.list-check::before {
+  content: "\f00c";
+  font-family: Fontawesome;
+}
+.check-list {
+  display: none;
+  
+}
+
+.password-input:focus + .check-list {
+  display: block;
+  animation: identifier 1s;
+}
+
+@keyframes identifier {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; }
+}
+

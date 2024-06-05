@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h4>Hello!</h4>
+        <h1>Welcome</h1>
+        <form>
+            <label for="uid">User ID</label> 
+            <input type="text" name="uid" id="uid">
+            <label for="password">Password</label> <input type="password" class="password-input" name="password"
+                id="password-input">
+           
+                <ul  CLASS="check-list" >
+                    <li class="list">Incude 8 characters</li>
+                    <li class="list">Incude one lowercase letter</li>
+                    <li class="list">Incude one uppercase letter</li>
+                    <li class="list">Incude one number</li>
+                    <li class="list">Incude special characters</li>
+
+                </ul>
+            
+            <i class="fa-solid fa-eye " id="eye"></i>
+            <label for="confirmpassword">Confirm Password</label> <input type="password" class="password"
+                id="confirmpassword">
+            <p id="error"></p>
+            <button id="btn">Submit</button>
+    </div>
+
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
